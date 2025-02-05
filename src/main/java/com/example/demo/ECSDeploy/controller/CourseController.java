@@ -54,4 +54,9 @@ public class CourseController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
+
+    @GetMapping("/test")
+    public String test(){
+        return "CI/CD is working";
+    }
 }
