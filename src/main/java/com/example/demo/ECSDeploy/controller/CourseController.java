@@ -54,14 +54,4 @@ public class CourseController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
-
-    @GetMapping("/test")
-    public String test(){
-        return "Testing CI/CD pipeline";
-    }
-
-    @GetMapping("/health")
-    public String checkHealth(){
-        return "Health is good!!!";
-    }
 }
