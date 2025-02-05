@@ -60,7 +60,8 @@ public class CourseController {
         return "Testing CI/CD pipeline";
     }
 
-
-
-
+    @GetMapping("/health")
+    public String checkHealth(){
+        return "Health is good!!!";
+    }
 }
