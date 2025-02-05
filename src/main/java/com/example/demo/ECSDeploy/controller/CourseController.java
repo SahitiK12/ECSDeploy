@@ -59,4 +59,11 @@ public class CourseController {
     public String test(){
         return "CI/CD is working";
     }
+
+    @GetMapping("/health")
+    public String checkHealth(){
+        return "Health check completed successfully!!!";
+    }
 }
+
+
