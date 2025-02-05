@@ -55,6 +55,12 @@ public class CourseController {
         }
     }
 
+    @GetMapping("/test")
+    public String test(){
+        return "Testing CI/CD pipeline";
+    }
+
+
 
 
 }
